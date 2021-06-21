@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="SpaceX | Contact us">
+    <meta name="keywords"
+        content="SpaceX, space activity, microsite, rockets, launches, astronaut, space exploration, spaceflight, rocket science">
+    <title>SpaceX | Contact</title>
+    <link rel="icon" href="icons/icon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/infostyles.css">
+
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <div class="nav-left">
+                <a href="index.html"><img id="logo" alt="The SpaceX logo with a link to the homepage"
+                        src="images/spacex-logo-white.png"></a>
+            </div>
+            <div class="nav-right">
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="index.html" title="Home Page">Home</a>
+                        <a href="launches.html" title="Launch schedule">Launches</a>
+                        <a href="rockets.html" title="All our rockets">Rockets</a>
+                        <a href="about.html" title="About our company">About</a>
+                        <a id="current" href="contact.html" title="Contact us">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="heading">Contact</h1>
+        <section>
+            <h2 class="subheading">Got a question for us?</h2>
+            <form id="contactForm">
+                <div class="formOne">
+                    <div>
+                        <label for="firstName">First name *</label>
+                        <input id="firstName" placeholder="First name..." />
+                        <div class="error" id="firstNameError">Please enter your first name</div>
+                    </div>
+                    <div>
+                        <label for="lastName">Last name *</label>
+                        <input id="lastName" placeholder="Last name..." />
+                        <div class="error" id="lastNameError">Please enter your last name</div>
+                    </div>
+                    <div>
+                        <label for="email">E-mail address *</label>
+                        <input id="email" placeholder="Email address..." />
+                        <div class="error" id="emailError">Please enter a valid email address</div>
+                    </div>
+                    <p id="required">* indicates a required field</p>
+                </div>
+                <div class="formTwo">
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input id="subject" placeholder="Subject..." />
+                    </div>
+                    <div>
+                        <label for="message">Message *</label>
+                        <textarea id="message" placeholder="Min. 10 characters"></textarea>
+                        <div class="error" id="messageError">Your message must have at least 10 characters</div>
+                    </div>
+                    <div id="submitMessage">
+                        Thank you for contacting us! We have received your enquiry and will get back to you very soon.
+                    </div>
+                    <button id="submitForm" type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <a href="#top">
+            <img id="arrowIcon" src="icons/arrow-top.png" alt="Go back to the top">
+        </a>
+    </main>
+    <footer>
+        <div id="footerContainer">
+            <div id="footerOne">
+                <a href="https://www.spacex.com/">
+                    <img id="logo2" src="images/spacex-logo.png" alt="SpaceX logo with link to their website">
+                </a>
+                <p>Want to receive a mail about upcoming launches?</p>
+                <p>Join Our Newsletter!</p>
+                <div class="email-container">
+                    <form action="#">
+                        <input type="email" placeholder="E-mail address..." name="email">
+                        <button id="submit" type="submit">OK!</button>
+                    </form>
+                </div>
+            </div>
+            <div id="footerTwo">
+                <h4>Social media</h4>
+                <a href="https://www.instagram.com/spacex/?hl=en">
+                    <img class="socialMedia" src="icons/instagram.png" alt="SpaceX Instagram">
+                </a>
+                <a href="https://twitter.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <img class="socialMedia" src="icons/twitter.png" alt="SpaceX Twitter">
+                </a>
+                <a href="https://www.facebook.com/Space-X-2006330642950821/">
+                    <img class="socialMedia" src="icons/facebook.png" alt="SpaceX Facebook">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

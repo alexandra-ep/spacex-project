@@ -1,0 +1,159 @@
+main {
+    width: 80%;
+    margin: 2em auto;
+}
+/* About */
+.infoContainer, #contactForm {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+#aboutText {
+    flex: 1;
+    background: #FFFFFF;
+    padding: 0.9em;
+    letter-spacing: 0.4px;
+}
+#aboutText p {
+    padding: 1em;
+}
+#aboutText, #map iframe {
+    border-radius: 4px;
+}
+#map {
+    flex: 1;
+}
+#map iframe {
+    border: 2px solid #FFFFFF;
+    width: 100%;
+}
+.thirdHeading {
+    margin-top: 0.3em;
+    font-size: 1.2em;
+}
+
+/* Contact */
+.formOne, .formTwo {
+    flex: 1;
+}
+label {
+    display: block;
+}
+.error {
+    display: none;
+    color: #f03131;
+}
+#required {
+    font-size: 1.12em;
+}
+#submitMessage {
+    display: none;
+}
+#contactForm input, textarea {
+    border: none;
+    border-radius: 2px;
+    padding: 0.4em;
+}
+#contactForm div {
+    margin-bottom: 1em;
+}
+#submitForm {
+    background: #155E92;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: 2px #FFFFFF solid;
+    padding: 0.4em;
+}
+#submitForm:hover {
+    background: #FFFFFF;
+    color: #155E92;
+    border: 2px #155E92 solid;
+}
+#submitMessage {
+    margin: 1em 0;
+}
+#contactForm textarea {
+    height: 120px;
+}
+/*_____________media queries*/
+/*_____________ Mobile Media Query */
+@media only screen and (max-width: 475px) {
+    .infoContainer, #contactForm {
+        flex-direction: column;
+    }
+    #aboutText p {
+        font-size: 0.8em;
+    }
+    #aboutText {
+        margin-bottom: 2em;
+    }
+    #map iframe {
+        height: 230px;
+    }
+    #contactForm input, textarea {
+        font-size: 1em;
+        width: 80%;
+    }
+    #contactform label {
+        font-size: 1.25em;
+    }
+    #submitForm, #submitMessage {
+        font-size: 1.2em;
+    }
+    .error {
+        font-size: 0.85em;
+    }
+}
+
+/*_____________Tablet Media Query */
+@media only screen and (min-width: 476px) and (max-width: 849px) {
+    .infoContainer, #contactForm {
+        flex-direction: column;
+    }
+    #aboutText p {
+        font-size: 0.85em;
+    }
+    #aboutText {
+        margin-bottom: 2em;
+    }
+    #map iframe {
+        height: 300px;
+    }
+    #contactForm label {
+        font-size: 1.28em;
+    }
+    #contactForm input, textarea {
+        font-size: 1.1em;
+        width: 70%;
+    }
+    #submitForm, #submitMessage {
+        font-size: 1.3em;
+    }
+    .error {
+        font-size: 0.9em;
+    }
+}
+
+/*_____________Desktop Media Query */
+@media only screen and (min-width: 850px) {
+    #aboutText {
+        margin-right: 2em;
+    }
+    #aboutText p {
+        font-size: 0.9em;
+    }
+    #map iframe {
+        height: 280px;
+        width: 100%;
+    }
+    #contactForm input, textarea {
+        font-size: 1.1em;
+        width: 75%;
+    }
+    #submitForm, #submitMessage, #contactForm label {
+        font-size: 1.3em;
+    }
+    .error {
+        font-size: 0.95em;
+    }
+}

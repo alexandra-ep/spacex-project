@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="SpaceX | All our rockets">
+    <meta name="keywords"
+        content="SpaceX, space activity, microsite, rockets, launches, astronaut, space exploration, spaceflight, rocket science">
+    <title>SpaceX | Rockets</title>
+    <link rel="icon" href="icons/icon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/cardstyle.css">
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <div class="nav-left">
+                <a href="index.html"><img id="logo" alt="The SpaceX logo with a link to the homepage"
+                        src="images/spacex-logo-white.png"></a>
+            </div>
+            <div class="nav-right">
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="index.html" title="Home Page">Home</a>
+                        <a href="launches.html" title="Launch schedule">Launches</a>
+                        <a id="current" href="rockets.html" title="All our rockets">Rockets</a>
+                        <a href="about.html" title="About our company">About</a>
+                        <a href="contact.html" title="Contact us">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="rocketsSection">
+            <h1 class="heading">Rockets</h1>
+            <div class="cardRocket">
+                <h2 class="subheading"> </h2>
+                <div class="rockets">
+                    <div id="rocketsImage">
+                        <div class="lds-ring">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div id="textContainer">
+                        <div id="rocketsText"></div>
+                    </div>
+                </div>
+            </div>
+            <p>For more in-depth information such as technical overview and milestones <a href="https://www.spacex.com/"
+                    title="Link to SpaceX website">visit our website.</a></p>
+        </section>
+        <a href="#top">
+            <img id="arrowIcon" src="icons/arrow-top.png" alt="Go back to the top">
+        </a>
+    </main>
+    <footer>
+        <div id="footerContainer">
+            <div id="footerOne">
+                <a href="https://www.spacex.com/">
+                    <img id="logo2" src="images/spacex-logo.png" alt="SpaceX logo with link to their website">
+                </a>
+                <p>Want to receive a mail about upcoming launches?</p>
+                <p>Join Our Newsletter!</p>
+                <div class="email-container">
+                    <form action="#">
+                        <input type="email" placeholder="E-mail address..." name="email">
+                        <button id="submit" type="submit">OK!</button>
+                    </form>
+                </div>
+            </div>
+            <div id="footerTwo">
+                <h4>Social media</h4>
+                <a href="https://www.instagram.com/spacex/?hl=en">
+                    <img class="socialMedia" src="icons/instagram.png" alt="SpaceX Instagram">
+                </a>
+                <a href="https://twitter.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <img class="socialMedia" src="icons/twitter.png" alt="SpaceX Twitter">
+                </a>
+                <a href="https://www.facebook.com/Space-X-2006330642950821/">
+                    <img class="socialMedia" src="icons/facebook.png" alt="SpaceX Facebook">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/rockets.js"></script>
+</body>
+
+</html>

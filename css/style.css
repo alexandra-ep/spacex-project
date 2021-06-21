@@ -1,0 +1,437 @@
+/* CSS Document */
+
+/*_____________font face*/
+@font-face {
+    font-family: LeagueGothic;
+    src: url(../fonts/LeagueGothic-Regular.otf)
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf)
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf)
+}
+
+/*_____________color palette
+#FFFFFF - White
+#F4F4F4 - Off-white
+#155E92 - Blue
+#083250 - Deep blue
+#1D2538 - Deeper blue
+
+/*_____________global styles*/
+
+/* limited reset */
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font: inherit;
+}
+html {
+    width: 100%;
+    background:#F4F4F4;
+    scroll-behavior: smooth;
+}
+
+/* text */
+nav a, #frontImageText, .buttons, #nextLaunch, #gallery, .dropbtn, .launches, .heading, .subheading, .thirdHeading, label, #submitForm {
+    font-family: LeagueGothic;
+    text-transform: uppercase;
+}
+#required, #message {
+    font-family: LeagueGothic;
+    color: #787878;
+}
+#footerContainer, input, #submit, #submitMessage {
+    font-family: LeagueGothic;
+    color: #155E92;
+}
+.title {
+    letter-spacing: 0.7px;
+}
+#rocketsText p, #rocketsSection p, #aboutText {
+    font-family: Roboto-Regular;
+}
+#rocketsText a, #rocketsSection a, .error {
+    font-family: Roboto-Bold;
+}
+#rocketsText a, p, #rocketsSection a, p {
+    color: #575656;
+}
+
+/* header */
+nav {
+    background: #06183E;
+    display: flex;
+}
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.nav-left {
+    flex: 1;
+}
+#frontImage {
+    width: 100%;
+    height: auto;
+}
+.frontImageContainer {
+    position: relative;
+    text-align: center;
+    color: #DEEFFF;
+}
+#frontImageContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* main */
+#nextLaunch, table, #gallery {
+    text-align: center;
+    margin: 1.3em auto;
+    border-radius: 6px;
+}
+#nextLaunch {
+    background: #FFFFFF;
+}
+#nextLaunch {
+    padding: 1.5em;
+}
+#countdownNumbers, #missionName, .buttons, .heading, #submit {
+    color: #155E92;
+}
+#countdownTitles {
+    color: #032239;
+}
+.title, .subheading, .thirdHeading {
+    color: #1D2538;
+}
+.buttons {
+    display: block;
+    border-radius: 4px;
+    padding: 0.25em;
+    background: #FFFFFF;
+    border: 2px #155E92 solid;
+    margin: 1em auto;
+}
+a {
+    text-decoration: none;
+}
+.buttons:hover {
+    background: #155E92;
+    color: #FFFFFF;
+}
+#imageContainer {
+    display: grid;
+    grid-gap: 1em;
+}
+#imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px #FFFFFF solid;
+    border-radius: 3px;
+}
+#arrowIcon {
+    width: 20px;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* footer */
+footer {
+    background: #E1E1E1;
+}
+#footerContainer {
+    display: flex;
+    text-align: center;
+    padding: 1em;
+}
+#footerOne {
+    flex: 1;
+}
+footer input, #submit {
+    border: none;
+    border-radius: 2px;
+    padding: 0.2em;
+    margin-top: 0.5em;
+}
+footer input {
+    background: #FFFFFF;
+    width: 10em;
+}
+#submit {
+    background: #F7F7F7;
+    width: 2em;
+}
+#footerTwo {
+    flex: 1;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+.socialMedia {
+    padding-left: 0.25em;
+}
+footer h4 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+#logo2 {
+    margin-left: 1em;
+}
+
+ /*_____________media queries*/
+/*_____________ Mobile Media Query */
+@media only screen and (max-width: 475px) {
+    nav {
+        padding: 0.95em;
+    }
+    #logo {
+        width: 14em;
+    }
+    #logo2 {
+        width: 14em;
+    }
+    #frontImageText {
+        font-size: 1.7em;
+    }
+    #frontImageContent img {
+        display: none;
+    }
+    #nextLaunch {
+        width: 70%;
+    }
+    table {
+        width: 80%;
+    }
+    #gallery {
+        padding: 0.5em;
+    }
+    .title, .heading  {
+        font-size: 1.9em;
+    }
+    #countdownTitles {
+        font-size: 1.4em; 
+    }
+    #countdownNumbers {
+        font-size: 2.4em;
+    }
+    #missionName, .subheading {
+        font-size: 1.5em;
+    }
+    .buttons {
+        font-size: 1.3em;
+    }
+    #imageContainer {
+        width: 60%;
+        margin: 0.5em auto;
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(4, 35vw);
+    }
+    .socialMedia {
+        width: 2.8em;
+    }
+    #footerContainer {
+        flex-direction: column;
+    }
+    #footerTwo {
+        margin-top: 1.5em;
+    }
+    /* dropdown */
+    .dropbtn {
+        background: none;
+        color: white;
+        font-size: 1.2em;
+        padding: 0.25em 0.35em;
+        border: 2px #FFFFFF solid;
+        border-radius: 2px;
+        text-transform: uppercase;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        right: 0;
+        position: absolute;
+        font-size: 1.1em;
+        background-color: #F4F4F4;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: #032239;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: #d3d2d2;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/*_____________Tablet Media Query */
+@media only screen and (min-width: 476px) and (max-width: 849px) {
+    nav {
+        padding: 1em;
+    }
+    #logo {
+        width: 16em;
+    }
+    #logo2 {
+        width: 17em;
+    }
+    #frontImageText {
+        font-size: 2.3em;
+    }
+    #frontImageContent img {
+        width: 20%;
+    }
+    #nextLaunch, table {
+        width: 70%;
+    }
+    #gallery {
+        padding: 1em;
+    }
+    .title, .heading  {
+        font-size: 2.1em;
+    }
+    #countdownTitles {
+        font-size: 1.9em; 
+    }
+    #countdownNumbers {
+        font-size: 3em;
+    }
+    #missionName, .subheading {
+        font-size: 1.8em;
+    }
+    .buttons {
+        font-size: 1.5em;
+    }
+    #imageContainer {
+        width: 80%;
+        margin: 0.5em auto;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 25vw);
+    }
+    .socialMedia {
+        width: 3.1em;
+    }
+    .dropbtn {
+        background: none;
+        color: white;
+        font-size: 1.4em;
+        padding: 0.25em 0.35em;
+        border: 2px #FFFFFF solid;
+        border-radius: 2px;
+        text-transform: uppercase;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        right: 0;
+        position: absolute;
+        background-color: #F4F4F4;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 1.3em;
+    }
+    .dropdown-content a {
+        color: #032239;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: #d3d2d2;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/*_____________Desktop Media Query */
+@media only screen and (min-width: 850px) {
+    nav {
+        padding: 1.25em;
+    }
+    #logo {
+        width: 14em;
+    }
+    #logo2 {
+        width: 20em;
+    }
+    nav a {
+        font-size: 1.6em;
+        margin-right: 1.4em;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    footer p, input, #submit {
+        font-size: 1.1em;
+    }
+    #current {
+        text-decoration: underline;
+    }
+    .nav-right {
+        margin-top: 1em;
+    }
+    #frontImageText {
+        font-size: 2.8em;
+    }
+    #frontImageContent img {
+        width: 20%;
+    }
+    #nextLaunch {
+        width: 55%;
+    }
+    table {
+        width: 60%;
+    }
+    #gallery {
+        padding: 1.8em;
+    }
+    .title, .heading {
+        font-size: 2.45em;
+    }
+    #countdownTitles {
+        font-size: 2em; 
+    }
+    #countdownNumbers {
+        font-size: 3.2em;
+    }
+    #missionName, .subheading {
+        font-size: 1.85em;
+    }
+    .buttons {
+        font-size: 1.75em;
+    }
+    #imageContainer {
+        margin: 1em auto;
+        width: 90%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 20vw);
+    }
+    .socialMedia {
+        width: 3.4em;
+    }
+    .dropbtn {
+        display: none;
+    }
+}

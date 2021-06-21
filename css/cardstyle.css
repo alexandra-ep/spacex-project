@@ -1,0 +1,201 @@
+main {
+    width: 80%;
+    margin: 2em auto;
+}
+/* launch schedule */
+.launches {
+    display: flex;
+    margin-top: 1em;
+}
+#containerUpcoming, #containerPast {
+    flex: 1;
+    overflow: scroll;
+}
+.card {
+    background: #FFFFFF;
+    margin: 1em 0;
+    border-radius: 4px;
+    padding: 1.1em;
+}
+.card p {
+    color: #083250;
+    padding: 0.35em;
+}
+.results, .resultsHeading {
+    color: #155E92;
+}
+.card .resultsHeading {
+    padding: 0.35em;
+}
+
+/* Loader (loading.io/css | https://github.com/loadingio/css-spinner/tree/master/build/ring) */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #155E92;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #155E92 transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* rockets */
+.rockets {
+    display: flex;
+    margin-bottom: 2.5em;
+}
+#rocketsImage, #textContainer {
+    flex: 1;
+}
+#rocketsText p {
+    padding: 0.8em 0.8em 0.8em 0.9em;
+}
+#textContainer, #rocketsImage img, .rockets {
+    border-radius: 4px;
+}
+#rocketsSection p {
+    width: 90%;
+    letter-spacing: 0.4px;
+}
+#rocketsImage img {
+    border: 3px solid #FFFFFF;
+}
+.cardRocket .subheading {
+    margin: 0.4em 0 0.3em 0;
+}
+#rocketsSection {
+    margin-bottom: 2em;
+}
+#rocketsSection a:hover {
+    text-decoration: underline;
+}
+
+/*_____________media queries*/
+/*_____________ Mobile Media Query */
+@media only screen and (max-width: 475px) {
+    .launches {
+        flex-direction: column;
+    }
+    #containerUpcoming {
+        max-height: 310px;
+        margin-bottom: 3em;
+    }
+    #containerPast {
+        max-height: 310px;
+        margin-bottom: 2em;
+    }
+    .card .resultsHeading {
+        font-size: 1.4em;
+    }
+    .card p {
+        font-size: 1.2em;
+    }
+    .rockets {
+        flex-direction: column;
+    }
+    #textContainer {
+        background: #ffffff96;
+        width: 100%;
+    }
+    #rocketsImage img {
+        width: 100%;
+    }
+    #rocketsSection p {
+        width: 90%;
+        font-size: 0.8em;
+    }
+}
+
+/*_____________Tablet Media Query */
+@media only screen and (min-width: 476px) and (max-width: 849px) {
+    .launches {
+        flex-direction: column;
+    }
+    #containerUpcoming, #containerPast {
+        max-height: 410px;
+        margin-bottom: 3em;
+    }
+    .resultsHeading {
+        font-size: 1.5em;
+    }
+    .card p {
+        font-size: 1.3em;
+    }
+    .rockets {
+        flex-direction: column;
+    }
+    #textContainer {
+        background: #ffffff96;
+        width: 100%;
+    }
+    #rocketsImage img {
+        width: 100%;
+    }
+    #rocketsSection p {
+        font-size: 0.85em;
+    }
+}
+
+/*_____________Desktop Media Query */
+@media only screen and (min-width: 850px) {
+    .launches {
+        flex-direction: row;
+        margin-bottom: 2em;
+    }
+    #sectionUpcoming {
+        margin-right: 4em;
+    }
+    #sectionPast {
+        margin-left: 4em;
+    }
+    #containerUpcoming, #containerPast {
+        height: 600px;
+    }
+    .card .resultsHeading {
+        font-size: 1.5em;
+    }
+    .card p {
+        font-size: 1.3em;
+    }
+    .rockets {
+        align-items: center;
+    }
+    #rocketsImage {
+        max-width: 50%;
+    }
+    #rocketsImage img {
+        width: 90%;
+    }
+    #textContainer {
+        width: 45%;
+    }
+    #rocketsSection p {
+        font-size: 0.9em;
+    }
+}
